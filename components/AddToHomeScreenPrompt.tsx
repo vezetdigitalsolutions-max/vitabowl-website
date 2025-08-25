@@ -61,13 +61,15 @@ const AddToHomeScreenPrompt = () => {
       )}
     >
       <div className="flex items-center gap-3">
-        <Image
-          src="/images/vitabowl-logo.png"
-          alt="Vitabowl Logo"
-          width={48}
-          height={48}
-          className="rounded-lg bg-white p-2"
-        />
+        <div className="rounded-lg bg-white p-2 flex items-center justify-center">
+          <Image
+            src="/images/vitabowl-logo.png"
+            alt="Vitabowl Logo"
+            width={40}
+            height={40}
+            className="object-contain"
+          />
+        </div>
         <div>
           <p className="font-semibold text-lg">Vitabowl</p>
           <p className="text-sm">Add to home screen for 1-click reordering!</p>
