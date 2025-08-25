@@ -71,8 +71,8 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
+    icon: '/logo-favicon.png',
+    shortcut: '/logo-favicon.png',
     apple: '/logo-favicon.png',
   },
   manifest: '/site.webmanifest',
@@ -119,7 +119,8 @@ export default function RootLayout({
   return (
     <html lang="en-IN" className="scroll-smooth light" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/images/vitabowl-logo.png" type="image/png" />
+        <link rel="icon" href="/logo-favicon.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/logo-favicon.png" type="image/png" sizes="16x16" />
       </head>
       <body className={`${inter.className} ${montserrat.variable}`}>
         <CartProvider>
