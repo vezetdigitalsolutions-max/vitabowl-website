@@ -27,27 +27,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   }
 
   return (
-    <div
-      className="rounded-2xl shadow-xl overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] relative max-w-sm mx-auto"
-      style={{
-        backgroundColor: "#F5F1E8",
-        backgroundImage: `
-          radial-gradient(circle at 20% 20%, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
-          radial-gradient(circle at 80% 80%, rgba(139, 69, 19, 0.08) 0%, transparent 50%),
-          radial-gradient(circle at 40% 60%, rgba(139, 69, 19, 0.05) 0%, transparent 50%)
-        `,
-      }}
-    >
-      {/* Subtle pattern overlay to match your image */}
-      <div
-        className="absolute inset-0 opacity-30"
-        style={{
-          backgroundImage: `
-          repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(139, 69, 19, 0.02) 30deg, transparent 60deg),
-          repeating-conic-gradient(from 45deg at 25% 25%, transparent 0deg, rgba(139, 69, 19, 0.01) 15deg, transparent 30deg)
-        `,
-        }}
-      ></div>
+    <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:scale-[1.02] relative max-w-sm mx-auto">
 
       {/* Image section */}
       <div className="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden z-10">

@@ -23,76 +23,92 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Vitabowl - Crispy. Natural. Delicious. Veggie Chips",
-    template: "%s | Vitabowl", // Allows dynamic titles for other pages
+    default: "Vitabowl - India's #1 Healthy Veggie Chips | 100% Natural Snacks",
+    template: "%s | Vitabowl - Healthy Veggie Chips",
   },
   description:
-    "Wholesome veggie chips. Made in India. Delivered to your door. Explore Beetroot, Carrot, and Avocado chips. Healthy, natural, and delicious snacks.",
+    "Buy India's healthiest veggie chips online. 100% natural beetroot, carrot & avocado chips with no preservatives. Free delivery above ₹500. Order now!",
   keywords: [
-    "Vitabowl",
-    "healthy snacks",
-    "veggie chips",
-    "natural chips",
-    "made in India",
-    "gluten-free",
-    "vegan snacks",
-    "beetroot chips",
-    "carrot chips",
-    "avocado chips",
-    "crispy snacks",
-    "delicious snacks",
+    "healthy snacks India",
+    "veggie chips online",
+    "natural chips buy",
+    "beetroot chips price",
+    "carrot chips healthy",
+    "avocado chips India",
+    "no preservatives snacks",
+    "vegan chips online",
+    "gluten free snacks",
+    "organic chips India",
+    "healthy munching",
+    "diet snacks",
+    "nutritious chips",
+    "Vitabowl chips",
+    "premium snacks India"
   ],
-  applicationName: "Vitabowl Website",
-  authors: [{ name: "Vitabowl Team" }], // Add your team/company name
-  creator: "Vitabowl Team",
-  publisher: "Vitabowl",
+  applicationName: "Vitabowl",
+  authors: [{ name: "Vitabowl India" }],
+  creator: "Vitabowl",
+  publisher: "Vitabowl India",
+  category: "Food & Beverages",
+  classification: "Healthy Snacks",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code',
+  },
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   icons: {
-    icon: "/images/vitabowl-logo-graphic.png", // Favicon for browser tabs
-    shortcut: "/images/vitabowl-logo-graphic.png",
-    apple: "/images/vitabowl-logo-graphic.png", // Apple touch icon for iOS home screen
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/images/vitabowl-logo-graphic.png", // Safari pinned tab icon
-        color: "#FF8C00",
-      },
-    ],
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/logo-favicon.png',
   },
+  manifest: '/site.webmanifest',
   openGraph: {
-    title: "Vitabowl - Crispy. Natural. Delicious. Veggie Chips",
+    title: "Vitabowl - India's #1 Healthy Veggie Chips | 100% Natural Snacks",
     description:
-      "Wholesome veggie chips. Made in India. Delivered to your door. Explore Beetroot, Carrot, and Avocado chips. Healthy, natural, and delicious snacks.",
-    url: "https://vitabowl.vercel.app", // Replace with actual domain
+      "Buy India's healthiest veggie chips online. 100% natural beetroot, carrot & avocado chips with no preservatives. Free delivery above ₹500. Order now!",
+    url: "https://vitabowl.vercel.app",
     siteName: "Vitabowl",
     images: [
       {
-        url: "/images/vitabowl-logo-graphic.png", // Use your logo for Open Graph
-        width: 500, // Adjust width/height as needed for social sharing
-        height: 500,
-        alt: "Vitabowl Logo - Crispy Natural Delicious Veggie Chips",
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vitabowl - India's Healthiest Veggie Chips",
       },
     ],
     locale: "en_IN",
     type: "website",
+    countryName: "India",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vitabowl - Crispy. Natural. Delicious. Veggie Chips",
+    title: "Vitabowl - India's #1 Healthy Veggie Chips",
     description:
-      "Wholesome veggie chips. Made in India. Delivered to your door. Explore Beetroot, Carrot, and Avocado chips. Healthy, natural, and delicious snacks.",
-    images: ["/images/vitabowl-logo-graphic.png"], // Use your logo for Twitter card
-    creator: "@vitabowll", // Replace with your Twitter handle if you have one
+      "100% natural veggie chips with no preservatives. Free delivery above ₹500. Order healthy snacks online!",
+    images: ["/og-image.jpg"],
+    creator: "@myvitabowl",
   },
   alternates: {
-    canonical: "https://vitabowl.vercel.app", // Replace with actual domain
-    // Add other social links here if they have specific meta tags
+    canonical: "https://vitabowl.vercel.app",
   },
-    generator: 'v0.app'
+  other: {
+    'google-site-verification': 'your-google-verification-code',
+    'msvalidate.01': 'your-bing-verification-code',
+  },
 }
 
 export default function RootLayout({
@@ -101,7 +117,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="scroll-smooth light" suppressHydrationWarning>
+    <html lang="en-IN" className="scroll-smooth light" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/images/vitabowl-logo.png" type="image/png" />
+      </head>
       <body className={`${inter.className} ${montserrat.variable}`}>
         <CartProvider>
           <ToastProvider>

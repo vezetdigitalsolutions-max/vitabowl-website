@@ -70,7 +70,7 @@ export const products: Product[] = [
     badges: ["🌱 Vegan", "🧂 Low Salt", "❤️ No Preservatives", "🔥 Best Seller"],
     fullDescription:
       "Our Beetroot Chips are thinly sliced and gently dehydrated to preserve their vibrant color and earthy sweetness. Packed with essential vitamins and minerals, they make for a perfect healthy snack. Enjoy them straight from the bag or as a colorful addition to your meals. Each chip is a testament to our commitment to natural goodness and delightful crunch.",
-    ingredients: "Fresh Beetroot, Cold-Pressed Sunflower Oil, Himalayan Pink Salt.",
+    ingredients: "Fresh Beetroot, Cold-Pressed Sunflower Oil, Himalayan Pink Salt. No artificial colors, preservatives, or additives.",
     nutritionalFacts: [
       { item: "Calories", value: "140 kcal" },
       { item: "Fiber", value: "4g" },
@@ -84,12 +84,12 @@ export const products: Product[] = [
     id: "carrot",
     name: "100g Carrot Chips",
     description: "Crispy and naturally sweet, a great source of Vitamin A.",
-    image: "https://via.placeholder.com/400x400/FFDDC1/000000?text=Carrot+Chips+Pack", // Specific dummy image
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='white'/%3E%3Ccircle cx='200' cy='200' r='120' fill='none' stroke='%23FF8C00' stroke-width='6' stroke-dasharray='15,8'/%3E%3Ctext x='200' y='210' text-anchor='middle' font-size='24' font-weight='bold' fill='%23FF8C00'%3ECOMING SOON%3C/text%3E%3C/svg%3E",
     price: 150,
     badges: ["🌱 Vegan", "🧂 Low Salt", "❤️ No Preservatives"],
     fullDescription:
       "Experience the delightful crunch of our Carrot Chips, made from farm-fresh carrots. These golden crisps are a fantastic way to enjoy your veggies, offering a subtly sweet flavor and a satisfying texture. Ideal for kids and adults alike.",
-    ingredients: "Fresh Carrot, Cold-Pressed Sunflower Oil, Sea Salt.",
+    ingredients: "Fresh Carrot, Cold-Pressed Sunflower Oil, Sea Salt. Rich in natural Beta-Carotene and Vitamin A.",
     nutritionalFacts: [
       { item: "Calories", value: "130 kcal" },
       { item: "Fiber", value: "3g" },
@@ -104,12 +104,12 @@ export const products: Product[] = [
     id: "avocado",
     name: "100g Avocado Chips",
     description: "Rich, creamy, and satisfying. A unique healthy indulgence.",
-    image: "https://via.placeholder.com/400x400/FFDDC1/000000?text=Avocado+Chips+Pack", // Specific dummy image
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='white'/%3E%3Ccircle cx='200' cy='200' r='120' fill='none' stroke='%239ACD32' stroke-width='6' stroke-dasharray='15,8'/%3E%3Ctext x='200' y='210' text-anchor='middle' font-size='24' font-weight='bold' fill='%239ACD32'%3ECOMING SOON%3C/text%3E%3C/svg%3E",
     price: 150,
     badges: ["🌱 Vegan", "🧂 Low Salt", "❤️ No Preservatives", "✨ New"],
     fullDescription:
       "Our Avocado Chips offer a truly unique snacking experience. Made from ripe avocados, they are gently dried to create a crispy texture while retaining their natural creamy and nutty flavor. A wholesome and satisfying alternative to traditional chips.",
-    ingredients: "Fresh Avocado, Cold-Pressed Sunflower Oil, Black Pepper, Himalayan Pink Salt.",
+    ingredients: "Fresh Avocado, Cold-Pressed Sunflower Oil, Black Pepper, Himalayan Pink Salt. Packed with healthy monounsaturated fats.",
     nutritionalFacts: [
       { item: "Calories", value: "150 kcal" },
       { item: "Fiber", value: "5g" },
@@ -159,16 +159,36 @@ export const testimonialsData: TestimonialItem[] = [
 // FAQs Data
 export const faqsData: FAQItem[] = [
   {
-    question: "Are your chips vegan?",
-    answer: "Yes, all our chips are 100% plant-based and made with natural ingredients.",
+    question: "Are your chips vegan and gluten-free?",
+    answer: "Yes, all our chips are 100% plant-based, vegan, and naturally gluten-free. Made with only fresh vegetables, cold-pressed oil, and natural salt.",
   },
   {
-    question: "How do I order?",
-    answer: "Just click the WhatsApp button and send a message. Our team will guide you through the rest!",
+    question: "How do I place an order?",
+    answer: "Simply click the WhatsApp button on our website or call us directly. Our friendly team will help you choose products and arrange delivery to your doorstep.",
   },
   {
-    question: "Do you ship nationwide?",
-    answer: "Yes, pan-India shipping is available. Delivery times may vary based on your location.",
+    question: "Do you deliver across India?",
+    answer: "Yes, we offer pan-India shipping! Delivery typically takes 2-5 business days depending on your location. Free shipping on orders above ₹500.",
+  },
+  {
+    question: "How long do the chips stay fresh?",
+    answer: "Our chips have a shelf life of 6 months when stored in a cool, dry place. Once opened, consume within 7 days for best taste and crunch.",
+  },
+  {
+    question: "What makes Vitabowl chips healthier than regular chips?",
+    answer: "Unlike regular chips, we use no preservatives, artificial colors, or palm oil. Our chips are gently dehydrated to retain nutrients and natural flavors.",
+  },
+  {
+    question: "Can I return or exchange products?",
+    answer: "We offer a 100% satisfaction guarantee. If you're not happy with your order, contact us within 24 hours of delivery for a full refund or replacement.",
+  },
+  {
+    question: "Are there any allergens in your products?",
+    answer: "Our chips are made in a facility that processes nuts. Please check individual product labels for specific allergen information if you have severe allergies.",
+  },
+  {
+    question: "Do you offer bulk orders or corporate gifting?",
+    answer: "Yes! We provide special pricing for bulk orders (50+ packs) and corporate gifting. Contact us on WhatsApp for custom quotes and packaging options.",
   },
 ]
 
@@ -215,6 +235,6 @@ export const comparisonData: ComparisonRow[] = [
 ]
 
 // Social Media & Contact Information
-export const WHATSAPP_PHONE_NUMBER = "919500458882" // Updated WhatsApp number
-export const CONTACT_EMAIL = "srinathrajasekaran2006@gmail.com" // Contact email
-export const INSTAGRAM_HANDLE = "vitabowll" // Updated to your actual Instagram handle
+export const WHATSAPP_PHONE_NUMBER = "919894789309" // Updated WhatsApp number
+export const CONTACT_EMAIL = "vitabowl7676@gmail.com" // Contact email
+export const INSTAGRAM_HANDLE = "myvitabowl" // Updated to your actual Instagram handle

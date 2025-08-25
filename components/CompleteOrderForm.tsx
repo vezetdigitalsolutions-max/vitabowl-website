@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/dialog"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import { products } from "@/lib/data"
+import { products, WHATSAPP_PHONE_NUMBER } from "@/lib/data"
 import type { Product } from "@/lib/data"
 import type { CartItem } from "@/lib/whatsapp"
 import { Plus, Minus, X, ShoppingCart, User, MapPin, CreditCard, Package, Tag, Check } from "lucide-react"
@@ -351,7 +351,7 @@ export default function CompleteOrderForm({ children, product, cartItems, onOrde
 
     // Generate WhatsApp message
     const whatsappMessage = generateWhatsAppMessage()
-    const whatsappUrl = `https://wa.me/919500458882?text=${whatsappMessage}`
+    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${whatsappMessage}`
 
     // Open WhatsApp
     window.open(whatsappUrl, "_blank")
