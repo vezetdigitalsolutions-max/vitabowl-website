@@ -66,7 +66,7 @@ const AddToHomeScreenPrompt = () => {
           alt="Vitabowl Logo"
           width={48}
           height={48}
-          className="rounded-lg bg-white p-1"
+          className="rounded-lg bg-white p-2"
         />
         <div>
           <p className="font-semibold text-lg">Vitabowl</p>
