@@ -4,7 +4,7 @@
   "description": "India's healthiest veggie chips with 100% natural ingredients",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FF8C00",
+  "background_color": "#ffffff",
   "theme_color": "#FF8C00",
   "orientation": "portrait-primary",
   "categories": ["food", "health", "shopping"],
