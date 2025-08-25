@@ -62,7 +62,7 @@ const AddToHomeScreenPrompt = () => {
     >
       <div className="flex items-center gap-3">
         <Image
-          src="/vitabowl-logo.png"
+          src="/images/vitabowl-logo.png"
           alt="Vitabowl Logo"
           width={48}
           height={48}
