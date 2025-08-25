@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Create Zoomed Favicon</title></head>
+<body>
+<canvas id="canvas" width="32" height="32"></canvas>
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+ctx.fillStyle = '#ffffff';
+ctx.fillRect(0, 0, 32, 32);
+const img = new Image();
+img.onload = function() {
+  ctx.drawImage(img, 2, 2, 28, 28);
+  const link = document.createElement('a');
+  link.download = 'vitabowl-favicon-zoomed.png';
+  link.href = canvas.toDataURL();
+  link.click();
+};
+img.src = '/images/vitabowl-logo.png';
+</script>
+</body>
+</html>

@@ -71,9 +71,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: '/logo-favicon.png',
-    shortcut: '/logo-favicon.png',
-    apple: '/logo-favicon.png',
+    icon: '/images/vitabowl-logo.png',
+    shortcut: '/images/vitabowl-logo.png',
+    apple: '/images/vitabowl-logo.png',
   },
   manifest: '/site.webmanifest',
   openGraph: {
@@ -119,8 +119,8 @@ export default function RootLayout({
   return (
     <html lang="en-IN" className="scroll-smooth light" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/logo-favicon.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="/logo-favicon.png" type="image/png" sizes="16x16" />
+        <link rel="icon" href="/images/vitabowl-logo.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/images/vitabowl-logo.png" type="image/png" sizes="16x16" />
       </head>
       <body className={`${inter.className} ${montserrat.variable}`}>
         <CartProvider>
